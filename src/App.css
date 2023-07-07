@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #aef0fb;
+  background-color: #ecd8fc;
 }
 
 .App-logo {
@@ -15,7 +15,7 @@
 }
 
 .App-header {
-  background-color: #aef0fb;
+  /* background-color: #ecd8fc; */
   /* 
   이것은 기본 값이다.
   min-height: 100vh;
@@ -91,47 +91,67 @@ select {
   font-family: Arial, sans-serif;
 }
 
-#Man_icon img {
-  position: relative;
-  left: 290px;
-  width: 300px;
-  height: 300px;
-  top:13px
-  }
-
-#Woman_icon img {
-  position: relative;
-  left: 290px;
-  top: 14px;
-  width: 300px;
-  height: 300px;
+#Man_icon_20 img {
+  position: absolute;
+  left: 280px;
+  bottom: 343px;
+  
 }
 
-#Age_Image img {
-  position: relative;
-  left: 1050px;
-  bottom : 300px;
-  width: 500px;
-  height: 500px;
+#Man_icon_30 img {
+  position: absolute;
+  left: 540px;
+  bottom: 350px;
+}
+
+#Man_icon_50 img {
+  position: absolute;
+  left: 780px;
+  bottom: 350px;
+}
+
+#Woman_icon_20 img {
+  position: absolute;
+  left: 1000px;
+  bottom: 350px;
+}
+
+#Woman_icon_30 img {
+  position: absolute;
+  left: 1220px;
+  bottom: 345px;
+  
+}
+
+#Woman_icon_50 img {
+  position: absolute;
+  left: 1470px;
+  bottom: 350px;  
+}
+
+#gender_image img{
+  width: 250px;
+  height: 250px;
 }
 
 #gender {
-  background-color: #fbffe9;
+  background-color: #f7fddc;
   color: #333;
   padding: 8px;
   border: none;
   border-radius: 12px;
   width: 200px;
-  font-size: 16px;
+  font-size: 17px;
+  font-weight: bold;
+  border: 2px solid;
 }
 
 #gender option {
-  background-color: #fff;
+  background-color: #f7fddc;
   color: #333;
-}
-
-#gender option:hover {
-  background-color: #eaeaea;
+  font-size: 17px;
+  
+  
 }
 
 #gender option[value="gender"] {
@@ -140,25 +160,81 @@ select {
 }
 
 #age {
-  background-color: #fbffe9;
+  background-color: #f7fddc;
   color: #333;
   padding: 8px;
   border: none;
   border-radius: 12px;
   width: 200px;
-  font-size: 16px;
+  font-size: 17px;
+  font-weight: bold;
+  border: 2px solid
 }
 
 #age option {
-  background-color: #fff;
+  background-color: #f7fddc;
   color: #333;
-}
-
-#age option:hover {
-  background-color: #eaeaea;
+  font-size: 17px;
+  border-width: 20px;
 }
 
 #age option[value="gender"] {
   font-style: italic;
   color: #888;
+  font-size: 17px;
+  font-weight: bold;
 }
+
+#First_Page_Button {
+  position: absolute;
+  left: 850px;
+  bottom: 90px;
+  width: 200px;
+  height: 50px;
+  border-radius: 12px;
+  border: none;
+  background-color: #f7fddc;
+  cursor: pointer;
+  border: 2px solid;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+/* SecondPage */
+
+#Category_Big img{
+  width: 200;
+  height: 200px;
+}
+
+#Row1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#Row2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Middle_Category_button {
+  border-radius: 12px;
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: 2px solid;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.Middle_Category_button:hover{
+  background-color: #eaeaea;
+}
+
+.Middle_Category_button.active {
+  background-color: #bdb9b9;
+}
+

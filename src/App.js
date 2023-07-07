@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import FirstPage from './components/FirstPage';
-// import SecondPage from './components/SecondPage';
+import SecondPage from './components/SecondPage';
 // import ThirdPage from './components/ThirdPage';
 // import FourthPage from './components/FourthPage';
 
@@ -10,8 +10,8 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<FirstPage />} />
-        
+      <Route path="/" element={<FirstPage />} />
+      <Route path="/second-page" element={<SecondPage />} />
       </Routes>
     </Router>
   );
@@ -34,6 +34,6 @@ export default App;
 
 
 // const App 에 넣을 내용들
-/** <Route path="/second" component={SecondPage} />
+/** 
     <Route path="/third" component={ThirdPage} />
     <Route path="/fourth" component={FourthPage} /> */
