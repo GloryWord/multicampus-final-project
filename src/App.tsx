@@ -1,17 +1,19 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import FirstPage from './components/FirstPage';
-import SecondPage from './components/SecondPage';
+import FirstPageCopy from './components/FirstPageCopy';
+// import SecondPage from './components/SecondPage';
 // import ThirdPage from './components/ThirdPage';
 // import FourthPage from './components/FourthPage';
+
+
 
 
 const App = () => {
   return (
     <Router>
       <Routes>
-      <Route path="/" element={<FirstPage />} />
-      <Route path="/second-page" element={<SecondPage />} />
+      <Route path="/" element={<FirstPageCopy />} />
+      {/* <Route path="/second-page" element={<SecondPage />} /> */}
       </Routes>
     </Router>
   );

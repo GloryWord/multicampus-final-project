@@ -1,17 +1,17 @@
 import React from 'react';
-import { useState,useEffect } from 'react';
+import { useState,useEffect,ChangeEvent } from 'react';
 import { Link } from 'react-router-dom';
 import '../App.css';
 
 const FirstPage = () => {
-  const [gender, setGender] = useState('');
-  const [age, setAge] = useState('');
+  const [gender, setGender] = useState<string>('');
+  const [age, setAge] = useState<string>('');
 
-  const handleGenderChange = (event) => {
+  const handleGenderChange = (event:ChangeEvent<HTMLSelectElement>) => {
     setGender(event.target.value);
   };
 
-  const handleAgeChange = (event) => {
+  const handleAgeChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setAge(event.target.value);
   };
 
